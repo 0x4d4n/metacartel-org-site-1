@@ -51,13 +51,18 @@ const Home: NextPage<HomeProps> = ({ photos }) => {
   return (
     <Flex direction="column">
       <PageHero bgImage="images/metacartel-paris-bw.png" >
-        <Text whiteSpace="nowrap" fontFamily="inherit" textAlign="center">
-          A supportive ecosystem of
-          <br />
-          creators and builders at the
-          <br />
-          forefront of web3 and DAOs
-        </Text>
+       <SectionList
+          justifyContent="space-between"
+          icon="mountains"
+          title="Ecosystem"
+          alignItems="center"
+          p={25}
+          mx="auto"
+          color="brand.sun"
+          pageUrl="/ecosystem"
+        >
+          <EcosystemList color="brand.sun" />
+        </SectionList>
       </PageHero>
       <MottoSection />
       <Section>
